@@ -1,0 +1,2 @@
+class Dior < ApplicationRecord
+end
