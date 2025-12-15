@@ -1,27 +1,50 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Online Shop — Backend
 
-Things you may want to cover:
+## 🔎 Overview
 
-* Ruby version
+This is a small online shop for perfumes and shoes. It has two main roles: **Admin** and **User**.
 
-* System dependencies
+### Admin can:
+- Add and manage product stock
+- Set or update product prices
 
-* Configuration
+### User can:
+- Browse products and add them to the shopping cart
+- View the total price of items in the cart
+- Place an order by providing delivery information (address, phone number)
+- Choose payment method (e.g., Cash on Delivery)
 
-* Database creation
+When an order is placed, the **admin receives an email notification** containing:
+- The list of purchased items
+- User’s delivery information (address, phone number)
 
-* Database initialization
+## 🚀 Features
+- User can browse products
+- User can add items to the shopping cart
+- User can calculate total price automatically
+- User can place an order and provide delivery info
+- Admin can add or update product stock
+- Admin can change product prices
+- Admin receives email notification with order details
 
-* How to run the test suite
+## 🛠 Tech Stack
+- Ruby on Rails
+- PostgreSQL
+- Docker
+- Unit Tests
 
-* Services (job queues, cache servers, search engines, etc.)
+## 💾 Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/Yamipyae/onlineshop_backend
+cd onlineshop_backend
+- bundle install
+- cp .env.example .env
+- docker build
+- docker up
+- rails db:migrate
+- rails s
+  
 
-* Deployment instructions
-
-* ...
-"# online_shop_backend" 
-"# deploy_online_backend" 
-"# onlineshop_backend" 
